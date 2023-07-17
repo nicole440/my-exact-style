@@ -4,22 +4,29 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-
     <header>
-      <h2>Nicole L. Groff</h2>
-      <nav>
-        <RouterLink to="/">Home</RouterLink> |
-        <RouterLink to="/about">About</RouterLink> |
-        <RouterLink to="/projects">Projects</RouterLink>
-      </nav>
+        <nav>
+            <RouterLink to="/">Home</RouterLink> |
+            <RouterLink to="/about">About</RouterLink> |
+            <RouterLink to="/projects">Projects</RouterLink>
+        </nav>
     </header>
 
     <RouterView />
-
 </template>
 
 <style scoped>
+header {
+  text-align: right;
+  margin: 3px;
+}
 
-@media (min-width: 1024px) {}
+@media (max-width: 1024px) {
+  header {
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+  }
+}
 </style>
 

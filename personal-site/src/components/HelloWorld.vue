@@ -6,7 +6,7 @@ const typeValue = ref('')
 const typeEffect = () => {
   if (typeValue.value.length < code.length) {
     typeValue.value += code.charAt(typeValue.value.length);
-    setTimeout(typeEffect, 50);
+    setTimeout(typeEffect, 60);
   } 
 }
 typeEffect()
@@ -25,6 +25,7 @@ typeEffect()
 
 <style scoped>
 code {
+  font-family: 'Times New Roman', Times, serif;
   color: #000;
   display: flex;
   margin: 0 auto;
@@ -32,7 +33,7 @@ code {
 }
 
 .typingEffect {
-  font-size: 7rem;
+  font-size: 12em;
   border-right: 2px solid #000;
   white-space: nowrap;
   animation: blink 1s linear infinite;
@@ -44,6 +45,13 @@ code {
   }
   50%, 100% {
     border-color: #000;
+  }
+}
+
+@media (max-width: 1024px) {
+  .typingEffect {
+    font-size: 64px;
+    width: 100%;
   }
 }
 </style>
