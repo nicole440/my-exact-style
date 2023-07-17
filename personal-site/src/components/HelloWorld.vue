@@ -25,6 +25,7 @@ typeEffect()
 
 <style scoped>
 code {
+  background-color: #fff;
   font-family: 'Times New Roman', Times, serif;
   color: #000;
   display: flex;
@@ -33,7 +34,7 @@ code {
 }
 
 .typingEffect {
-  font-size: 12em;
+  font-size: 10em;
   border-right: 2px solid #000;
   white-space: nowrap;
   animation: blink 1s linear infinite;
@@ -50,8 +51,13 @@ code {
 
 @media (max-width: 1024px) {
   .typingEffect {
-    font-size: 64px;
-    width: 100%;
+    font-size: 7em;
+  }
+}
+
+@media (max-width: 600px) {
+  .typingEffect {
+    font-size: 4em;
   }
 }
 </style>
