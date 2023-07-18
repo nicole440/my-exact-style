@@ -25,7 +25,7 @@ typeEffect()
 
 <style scoped>
 code {
-  background-color: #fff;
+  background-color: transparent;
   font-family: 'Times New Roman', Times, serif;
   color: #000;
   display: flex;
