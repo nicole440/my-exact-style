@@ -6,7 +6,7 @@ const typeValue = ref('')
 const typeEffect = () => {
   if (typeValue.value.length < code.length) {
     typeValue.value += code.charAt(typeValue.value.length);
-    setTimeout(typeEffect, 60);
+    setTimeout(typeEffect, 75);
   } 
 }
 typeEffect()
@@ -14,26 +14,25 @@ typeEffect()
 </script>
 
 <template>
-  <code>
+
     <div>
       <p class="typingEffect">
         {{ typeValue }}
       </p>
     </div>
-  </code>
+
 </template>
 
 <style scoped>
-code {
+
+.typingEffect {
   background-color: transparent;
   font-family: 'Times New Roman', Times, serif;
   color: #000;
   display: flex;
   margin: 0 auto;
+  padding: 10px 0 0 0;
   align-items: left;
-}
-
-.typingEffect {
   font-size: 10em;
   border-right: 2px solid #000;
   white-space: nowrap;

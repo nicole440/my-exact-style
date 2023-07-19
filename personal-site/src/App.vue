@@ -4,6 +4,11 @@
 </script>
 
 <template>
+  <nav>
+    <RouterLink to="/">home</RouterLink>
+    <RouterLink to="/about">about</RouterLink>
+    <RouterLink to="/projects">projects</RouterLink>
+  </nav>
   <RouterView />
   <div class="intro-text">
     <div class="first">
@@ -11,26 +16,25 @@
       <p>I'm a software developer in Lancaster County, PA.</p>
     </div>
     <div>
-      <p class="detail">I have a passion for harnessing the power of data using Java and Python. Whether it's building algorithms or developing efficient data processing systems, I find joy in crafting elegant solutions that drive insightful outcomes.</p>
+      <p class="detail">I have a passion for harnessing the power of data using Java and Python. Whether it's building
+        algorithms or developing efficient data processing systems, I find joy in crafting elegant solutions that drive
+        insightful outcomes.</p>
     </div>
     <div>
-      <p class="detail">I also love working with databases, from designing solid database architectures to writing efficient queries and ensuring seamless integration with applications. I enjoy diving deep into the intricacies of data storage, retrieval, and optimization.</p>
+      <p class="detail">I also love working with databases, from designing solid database architectures to writing
+        efficient queries and ensuring seamless integration with applications. I enjoy diving deep into the intricacies of
+        data storage, retrieval, and optimization.</p>
     </div>
     <div>
-      <p class="detail">When I'm not programming, I enjoy birdwatching, Brazilian jiu jitsu, and spoiling my dog and three cats.
+      <p class="detail">When I'm not programming, I enjoy birdwatching, Brazilian jiu jitsu, and spoiling my rescue
+        animals with love.
       </p>
     </div>
     <div class="last">
       <p class="subtext">Check out my <a href="https://www.github.com/nicole440" target="_blank">GitHub</a> to see my
-        projects while I continue building out this page!</p>
+        projects while I continue building this page!</p>
     </div>
-
   </div>
-  <!-- <nav>
-    <RouterLink to="/">Home</RouterLink> |
-    <RouterLink to="/about">About</RouterLink> |
-    <RouterLink to="/projects">Projects</RouterLink>
-  </nav> -->
 </template>
 
 <style>
@@ -43,10 +47,32 @@
 }
 
 body {
+  display: block;
   background-image: url("https://images.unsplash.com/uploads/141155339325423394b24/03982423?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
   background-size: auto;
   background-attachment: fixed;
+  margin: 0 auto;
+}
 
+nav {
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+  text-align: right;
+  background-color: #eceaea;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+nav > a {
+  letter-spacing: 2px;
+  padding: 5px 20px;
+  background-color: #eceaea;
+}
+
+nav > a:hover {
+  background-color: #f3f2f2;
 }
 
 .intro-text>div {
@@ -111,5 +137,4 @@ a:hover {
     text-align: center;
     margin-bottom: 50px;
   }
-}
-</style>
+}</style>
