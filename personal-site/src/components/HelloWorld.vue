@@ -24,7 +24,7 @@ if (route.name == 'about') {
   code = "helloooooooo"
 }
 typeValue.value = ''; // Reset typing effect
-  typeEffect(); // Start the typing effect again with the new code
+  typeEffect(); // Start typing effect again with the new value
 
 </script>
 
@@ -44,7 +44,7 @@ typeValue.value = ''; // Reset typing effect
   color: #000;
   display: flex;
   margin: 0 10px;
-  padding: 10px 0 0 0;
+  padding: 20px 0 0 0;
   align-items: left;
   width: max-content;
   font-size: 10em;
@@ -64,6 +64,7 @@ typeValue.value = ''; // Reset typing effect
 
 @media (max-width: 1024px) {
   .typingEffect {
+    padding-top: 35px;
     font-size: 7em;
   }
 }

@@ -3,17 +3,23 @@
 </script>
 
 <template>
-  <nav>
-    <RouterLink to="/">home</RouterLink>
-    <RouterLink to="/about">about</RouterLink>
-    <RouterLink to="/projects">projects</RouterLink>
-  </nav>
-  <RouterView />
+  <div>
+    <div>
+      <nav>
+        <RouterLink to="/">home</RouterLink>
+        <RouterLink to="/about">about</RouterLink>
+        <RouterLink to="/projects">projects</RouterLink>
+      </nav>
+    </div>
+    <div>
+      <RouterView />
+    </div>
+  </div>
 </template>
 
 <style>
 #app {
-  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', Verdana, sans-serif;
   text-align: left;
   line-height: normal;
   min-height: 100vh;
@@ -32,24 +38,24 @@ nav {
   margin: 0 auto;
   position: fixed;
   width: 100%;
-  text-align: right;
+  text-align: center;
   background-color: #eceaea;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
 }
 
-nav > a {
+nav>a {
   letter-spacing: 2px;
-  padding: 5px 20px;
+  padding: 5px;
+  margin: 0;
   background-color: #eceaea;
+  width: 200px;
 }
 
-nav > a:hover {
-  background-color: #f3f2f2;
+nav>a:hover {
+  background-color: #ffffff;
 }
-
-
 
 a {
   text-decoration: none;
@@ -77,4 +83,21 @@ a:hover {
   }
 }
 
+@media (max-width: 800px) {
+  nav {
+    text-align: center;
+    background-color: #eceaea;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  nav>a {
+    font-size: 1.5em;
+    max-width: fit-content;
+    letter-spacing: -3px;
+    padding: 5px;
+    background-color: #eceaea;
+  }
+}
 </style>

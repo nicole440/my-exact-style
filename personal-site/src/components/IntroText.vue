@@ -1,16 +1,12 @@
-<script>
-</script>
+<script></script>
 
-<template>
-    
-</template>
+<template></template>
 
 <style>
-.intro-text {
+.main-text {
     padding-left: 10px;
 }
-
-.intro-text>div {
+.main-text>div {
   margin-bottom: 25px;
   max-width: 40%;
   background-color: #ffffff94;
@@ -37,7 +33,7 @@ p {
 }
 
 @media (max-width: 1024px) {
-  .intro-text>div {
+  .main-text>div {
     max-width: 500px;
     margin: 40px 12px;
     background-color: #ffffffd0;
@@ -45,7 +41,7 @@ p {
 }
 
   @media (max-width: 600px) {
-  .intro-text>div {
+  .main-text>div {
     text-align: center;
     margin-bottom: 50px;
   }

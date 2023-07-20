@@ -13,9 +13,8 @@ export default {
 
 <template>
     <HelloWorld/>
-
-    <div class="intro-text">
-        <div class="first">
+    <div class="main-text">
+        <div>
             <h1>Hi, I'm Nicole.</h1>
             <p>I'm a software developer in Lancaster County, PA.</p>
         </div>
