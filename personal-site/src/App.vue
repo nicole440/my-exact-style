@@ -29,7 +29,9 @@
 body {
   display: block;
   background-image: url("https://images.unsplash.com/uploads/141155339325423394b24/03982423?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
-  background-size: auto;
+  background-size:contain;
+  background-position: right;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0 auto;
 }
@@ -46,6 +48,7 @@ nav {
 }
 
 nav>a {
+  color: #000;
   letter-spacing: 2px;
   padding: 5px;
   margin: 0;
@@ -55,6 +58,7 @@ nav>a {
 
 nav>a:hover {
   background-color: #ffffff;
+  color: rgb(255, 145, 0);
 }
 
 a {
@@ -63,14 +67,12 @@ a {
 }
 
 a:hover {
-  color: rgb(255, 0, 157);
+  color: #000;
 }
 
 @media (max-width: 1024px) {
 
   body {
-    background-size: contain;
-    background-repeat: no-repeat;
     background-position: center bottom;
   }
 
