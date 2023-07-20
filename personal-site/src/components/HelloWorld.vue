@@ -1,7 +1,9 @@
 <script setup>
-import { ref } from 'vue';
-const code = "hello, world."
-const typeValue = ref('')
+import { ref, computed } from 'vue';
+import { useRoute } from 'vue-router';
+
+let code = "";
+const typeValue = ref('');
 
 const typeEffect = () => {
   if (typeValue.value.length < code.length) {
@@ -11,16 +13,27 @@ const typeEffect = () => {
 }
 typeEffect()
 
+const route = useRoute();
+if (route.name == 'about') {
+  code = "about me...";
+} else if (route.name == 'home') {
+  code = "hello, world.";
+} else if (route.name == 'projects') {
+  code = "my projects:";
+} else {
+  code = "helloooooooo"
+}
+typeValue.value = ''; // Reset typing effect
+  typeEffect(); // Start the typing effect again with the new code
+
 </script>
 
 <template>
-
     <div>
       <p class="typingEffect">
         {{ typeValue }}
       </p>
     </div>
-
 </template>
 
 <style scoped>
@@ -30,9 +43,10 @@ typeEffect()
   font-family: 'Times New Roman', Times, serif;
   color: #000;
   display: flex;
-  margin: 0 auto;
+  margin: 0 10px;
   padding: 10px 0 0 0;
   align-items: left;
+  width: max-content;
   font-size: 10em;
   border-right: 2px solid #000;
   white-space: nowrap;

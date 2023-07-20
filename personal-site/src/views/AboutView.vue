@@ -1,7 +1,19 @@
+<script>
+import HelloWorld from '../components/HelloWorld.vue';
+
+export default {
+  components: {
+    HelloWorld,
+  },
+};
+
+</script>
 
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <HelloWorld/>
+    <h1>This page is under construction.</h1>
+    <p>Please check back later for updates!</p>
   </div>
 </template>
 
