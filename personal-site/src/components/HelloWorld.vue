@@ -29,10 +29,8 @@ typeValue.value = ''; // Reset typing effect
 </script>
 
 <template>
-    <div>
-      <p class="typingEffect">
-        {{ typeValue }}
-      </p>
+    <div class="typingEffect">
+      <p>{{ typeValue }}</p>
     </div>
 </template>
 
@@ -47,10 +45,12 @@ typeValue.value = ''; // Reset typing effect
   padding: 20px 0 0 0;
   align-items: left;
   width: max-content;
-  font-size: 10em;
   border-right: 2px solid #000;
   white-space: nowrap;
   animation: blink 1s linear infinite;
+}
+.typingEffect>p {
+  font-size: 10em;
 }
 
 @keyframes blink {
@@ -63,15 +63,13 @@ typeValue.value = ''; // Reset typing effect
 }
 
 @media (max-width: 1024px) {
-  .typingEffect {
-    padding-top: 35px;
-    font-size: 7em;
+  .typingEffect>p{
+    font-size: 4.5em;
+    margin-top: 25px;
   }
 }
 
 @media (max-width: 600px) {
-  .typingEffect {
-    font-size: 4em;
-  }
+
 }
 </style>

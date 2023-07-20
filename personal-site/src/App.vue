@@ -4,16 +4,16 @@
 
 <template>
   <div>
-    <div>
+
       <nav>
         <RouterLink to="/">home</RouterLink>
         <RouterLink to="/about">about</RouterLink>
         <RouterLink to="/projects">projects</RouterLink>
       </nav>
-    </div>
-    <div>
+
+
       <RouterView />
-    </div>
+
   </div>
 </template>
 
@@ -50,7 +50,7 @@ nav {
 nav>a {
   color: #000;
   letter-spacing: 2px;
-  padding: 5px;
+  padding: 10px;
   margin: 0;
   background-color: #eceaea;
   width: 200px;
@@ -73,6 +73,7 @@ a:hover {
 @media (max-width: 1024px) {
 
   body {
+    background-attachment: fixed;
     background-position: center bottom;
   }
 
@@ -96,7 +97,7 @@ a:hover {
 
   nav>a {
     font-size: 1.5em;
-    max-width: fit-content;
+    max-width: 100%;
     letter-spacing: -3px;
     padding: 5px;
     background-color: #eceaea;
