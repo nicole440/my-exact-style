@@ -16,12 +16,12 @@ typeEffect()
 const route = useRoute();
 if (route.name == 'about') {
   code = "about me...";
-} else if (route.name == 'home') {
-  code = "hello, world.";
+} else if (route.name == 'resume') {
+  code = "resume";
 } else if (route.name == 'projects') {
   code = "my projects:";
 } else {
-  code = "helloooooooo"
+  code = "hello, world."
 }
 typeValue.value = ''; // Reset typing effect
   typeEffect(); // Start typing effect again with the new value
@@ -40,7 +40,7 @@ typeValue.value = ''; // Reset typing effect
   background-color: transparent;
   font-family: 'Times New Roman', Times, serif;
   color: #000;
-  display: flex;
+  display: block;
   margin: 0 10px;
   padding: 20px 0 0 0;
   align-items: left;
@@ -62,14 +62,17 @@ typeValue.value = ''; // Reset typing effect
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .typingEffect>p{
-    font-size: 4.5em;
+    font-size: 7em;
     margin-top: 25px;
   }
 }
 
 @media (max-width: 600px) {
-
+  .typingEffect>p{
+    font-size: 4.5em;
+    margin-top: 25px;
+  }
 }
 </style>

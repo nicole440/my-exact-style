@@ -1,35 +1,32 @@
 <script setup>
-
+import HelloWorld from './components/HelloWorld.vue';
 </script>
 
 <template>
   <div>
-
-      <nav>
-        <RouterLink to="/">home</RouterLink>
-        <RouterLink to="/about">about</RouterLink>
-        <RouterLink to="/projects">projects</RouterLink>
-      </nav>
-
-
-      <RouterView />
-
+    <nav>
+      <RouterLink to="/">home</RouterLink>
+      <RouterLink to="/about">about</RouterLink>
+      <RouterLink to="/projects">projects</RouterLink>
+    </nav>
+    <RouterView />
   </div>
 </template>
 
 <style>
 #app {
-  font-family: 'Montserrat', Verdana, sans-serif;
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: left;
   line-height: normal;
   min-height: 100vh;
   margin: 0;
+  display: grid;
 }
 
 body {
   display: block;
   background-image: url("https://images.unsplash.com/uploads/141155339325423394b24/03982423?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
-  background-size:contain;
+  background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -58,12 +55,12 @@ nav>a {
 
 nav>a:hover {
   background-color: #ffffff;
-  color: rgb(255, 145, 0);
+  color: rgb(192, 112, 7);
 }
 
 a {
   text-decoration: none;
-  color: rgb(255, 145, 0);
+  color: rgb(192, 112, 7);
 }
 
 a:hover {
