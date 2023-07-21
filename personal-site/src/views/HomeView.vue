@@ -1,11 +1,11 @@
 <script>
 import HelloWorld from '../components/HelloWorld.vue';
-import IntroText from '../components/IntroText.vue';
+import TextContent from '../components/TextContent.vue';
 
 export default {
   components: {
     HelloWorld,
-    IntroText
+    TextContent
   },
 };
 </script>
@@ -13,7 +13,7 @@ export default {
 <template>
   <div>
     <HelloWorld />
-    <IntroText/>
+    <TextContent/>
     <div class="main-text">
       <div>
         <h1>Hi, I'm Nicole.</h1>

@@ -1,13 +1,13 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue';
 </script>
 
 <template>
   <div>
     <nav>
-      <RouterLink to="/">home</RouterLink>
-      <RouterLink to="/about">about</RouterLink>
-      <RouterLink to="/projects">projects</RouterLink>
+      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/about">About</RouterLink>
+      <RouterLink to="/projects">Projects</RouterLink>
+      <RouterLink to="/contact">Contact</RouterLink>
     </nav>
     <RouterView />
   </div>
@@ -36,12 +36,13 @@ body {
 nav {
   margin: 0 auto;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   text-align: center;
-  background-color: #eceaea;
+  background-color: #fff;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 nav>a {
@@ -49,12 +50,11 @@ nav>a {
   letter-spacing: 2px;
   padding: 10px;
   margin: 0;
-  background-color: #eceaea;
-  width: 200px;
+  width: 150px;
 }
 
 nav>a:hover {
-  background-color: #ffffff;
+  background-color: #eceaea;
   color: rgb(192, 112, 7);
 }
 
@@ -85,19 +85,17 @@ a:hover {
 
 @media (max-width: 800px) {
   nav {
-    text-align: center;
-    background-color: #eceaea;
+    width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+
   }
 
   nav>a {
+    width: auto;
     font-size: 1.5em;
-    max-width: 100%;
     letter-spacing: -3px;
-    padding: 5px;
-    background-color: #eceaea;
   }
 }
 </style>

@@ -1,27 +1,30 @@
 <script setup>
-import { ref, computed } from 'vue';
+import { ref } from 'vue';
 import { useRoute } from 'vue-router';
 
-let code = "";
+let header = "";
 const typeValue = ref('');
 
 const typeEffect = () => {
-  if (typeValue.value.length < code.length) {
-    typeValue.value += code.charAt(typeValue.value.length);
+  if (typeValue.value.length < header.length) {
+    typeValue.value += header.charAt(typeValue.value.length);
     setTimeout(typeEffect, 75);
   } 
 }
 typeEffect()
 
+// Change typewriter text depending on the current route
 const route = useRoute();
 if (route.name == 'about') {
-  code = "about me...";
+  header = "about me...";
 } else if (route.name == 'resume') {
-  code = "resume";
+  header = "resume";
 } else if (route.name == 'projects') {
-  code = "my projects:";
+  header = "my projects:";
+} else if (route.name == 'contact') {
+  header = "let's connect!";
 } else {
-  code = "hello, world."
+  header = "hello, world."
 }
 typeValue.value = ''; // Reset typing effect
   typeEffect(); // Start typing effect again with the new value
@@ -45,22 +48,23 @@ typeValue.value = ''; // Reset typing effect
   padding: 20px 0 0 0;
   align-items: left;
   width: max-content;
-  border-right: 2px solid #000;
+  /* border-right: 2px solid #000; */
   white-space: nowrap;
-  animation: blink 1s linear infinite;
+  /* animation: blink 1s linear infinite; */
 }
 .typingEffect>p {
   font-size: 10em;
 }
 
-@keyframes blink {
+/** Cursor feature graveyard */
+/* @keyframes blink {
   0%, 45% {
     border-color: transparent;
   }
   50%, 100% {
     border-color: #000;
   }
-}
+} */
 
 @media (max-width: 800px) {
   .typingEffect>p{
