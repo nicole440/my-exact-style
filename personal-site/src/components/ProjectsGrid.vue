@@ -13,10 +13,10 @@
                     <p class="description">Where it all began! I started this project when I was learning JavaScript in 2022
                         as I found myself considering the ways in which I could incorporate my beginner-level programming
                         knowledge into my work as a real estate paralegal. It began as a simple conditional statement in
-                        vanilla JS, and I have expanded on it by give it a simple UI with Vue.js.</p>
+                        vanilla JS, and I have expanded on it by giving it a simple UI with Vue.js.</p>
                     <p class="subtext"><span>Fun Fact:</span> After writing the initial JavaScript code, I adapted similar logic
                     into an Excel spreadsheet, creating corresponding conditional statements to build a complete recording
-                    fee calculator in Excel. The finished product won me three blue ribbons at my office's 'Excel Fair'.</p>
+                    fee calculator in Excel. The finished product won me three blue ribbons at my office's 'Excel Fair'!</p>
                 </div>
             </div>
             <div class="project-screenshot">
@@ -53,7 +53,7 @@
                         it transforms the data and loads it into a SQLite database. I'm currently working on configuring an
                         email notification feature for updates on recent bird sightings based on certain criteria.</p>
                     <p class="subtext"><span>Fun Fact:</span> The name of my GitHub repository for this
-                        project is the Scientific name of my favorite bird.</p>
+                        project is the scientific name of my favorite bird.</p>
                 </div>
             </div>
             <div class="project-screenshot">
