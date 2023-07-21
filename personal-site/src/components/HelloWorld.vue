@@ -56,7 +56,7 @@ typeValue.value = ''; // Reset typing effect
   font-size: 10em;
 }
 
-/** Cursor feature graveyard */
+/** Blinking cursor feature graveyard */
 /* @keyframes blink {
   0%, 45% {
     border-color: transparent;
