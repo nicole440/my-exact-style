@@ -1,11 +1,11 @@
 <script>
 import HelloWorld from '../components/HelloWorld.vue';
-import TextContent from '../components/TextContent.vue';
+import ProjectsGrid from '../components/ProjectsGrid.vue';
 
 export default {
   components: {
     HelloWorld,
-    TextContent
+    ProjectsGrid
   },
 };
 </script>
@@ -13,8 +13,8 @@ export default {
 <template>
   <div>
     <HelloWorld/>
-    <TextContent/>
-    <div class="main-text">
+    <ProjectsGrid/>
+    <!-- <div class="main-text">
       <div>
         <h1>This page is under construction.</h1>
         <p>Please check back later for updates.</p>
@@ -25,6 +25,6 @@ export default {
           to
           see what else I've been working on.</p>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
