@@ -13,10 +13,7 @@
                     <p class="description">Where it all began! I started this project when I was learning JavaScript in 2022
                         as I found myself considering the ways in which I could incorporate my beginner-level programming
                         knowledge into my work as a real estate paralegal. It began as a simple conditional statement in
-                        vanilla JS, and I have expanded on it by giving it a simple UI with Vue.js.</p>
-                    <p class="subtext"><span>Fun Fact:</span> After writing the initial JavaScript code, I adapted similar logic
-                    into an Excel spreadsheet, creating corresponding conditional statements to build a complete recording
-                    fee calculator in Excel. The finished product won me three blue ribbons at my office's 'Excel Fair'!</p>
+                        vanilla JS, and I have expanded on its functionality and given it a simple UI with Vue.js.</p>
                 </div>
             </div>
             <div class="project-screenshot">
@@ -52,8 +49,6 @@
                         observation and birding hotspot data from the Cornell Lab of Ornithology eBird API. Once extracted,
                         it transforms the data and loads it into a SQLite database. I'm currently working on configuring an
                         email notification feature for updates on recent bird sightings based on certain criteria.</p>
-                    <p class="subtext"><span>Fun Fact:</span> The name of my GitHub repository for this
-                        project is the scientific name of my favorite bird.</p>
                 </div>
             </div>
             <div class="project-screenshot">
@@ -65,6 +60,8 @@
 </template>
 
 <style scoped>
+/* TODO: Make this responsive*/
+
 .projects-container {
     display: grid;
     margin: 10px;
@@ -78,6 +75,10 @@
     margin-bottom: 30px;
 }
 
+.project-description, .project-header {
+    background-color: #ffffffb2;
+}
+
 .project-header {
     display: flex;
     align-content: flex-start;
@@ -86,8 +87,8 @@
 .project-screenshot {
     grid-area: screenshot;
     margin: auto;
-    background-color: #eceaea;
     padding: 10px;
+    background-color: #eceaeac7;
 }
 
 h1 {
