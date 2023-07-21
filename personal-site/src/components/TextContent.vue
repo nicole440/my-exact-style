@@ -19,9 +19,15 @@ h1 {
     margin-bottom: 0;
 }
 
-p {
-    font-weight: 200;
+h2 {
+    font-weight: 400;
     font-size: 28px;
+    margin-bottom: 30px;
+}
+
+p, li {
+    font-weight: 200;
+    font-size: 26px;
     margin: 0 auto;
 }
 
