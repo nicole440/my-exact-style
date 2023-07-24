@@ -10,11 +10,15 @@
       <RouterLink to="/contact">Contact</RouterLink>
     </nav>
     <RouterView />
+    <footer>
+      <h6>© 2023 Nicole Groff. All Rights Reserved.</h6>
+    </footer>
   </div>
 </template>
 
 <style>
 #app {
+  box-sizing: border-box;
   font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: left;
   line-height: normal;
@@ -32,18 +36,22 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 
-nav {
+nav, footer {
   margin: 0 auto;
   position: fixed;
   width: 100vw;
   text-align: center;
   background-color: #fff;
+}
+
+nav {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.123);
 }
 
 nav>a {
@@ -98,5 +106,15 @@ a:hover {
     font-size: 1.5em;
     letter-spacing: -3px;
   }
+}
+
+footer {
+    bottom: 0;
+    text-align: center;
+    box-shadow: 0 5px 2px 7px rgba(0, 0, 0, 0.123);
+}
+
+footer>h6 {
+  margin: 8px auto;
 }
 </style>
