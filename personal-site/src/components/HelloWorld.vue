@@ -44,39 +44,25 @@ typeValue.value = ''; // Reset typing effect
   font-family: 'Times New Roman', Times, serif;
   color: #000;
   display: block;
-  margin: 0 10px;
   padding: 20px 0 0 0;
   align-items: left;
-  width: max-content;
-  /* border-right: 2px solid #000; */
+  margin-left: 10px;
   white-space: nowrap;
-  /* animation: blink 1s linear infinite; */
 }
 .typingEffect>p {
   font-size: 10em;
 }
 
-/** Blinking cursor feature graveyard */
-/* @keyframes blink {
-  0%, 45% {
-    border-color: transparent;
-  }
-  50%, 100% {
-    border-color: #000;
-  }
-} */
-
 @media (max-width: 800px) {
   .typingEffect>p{
     font-size: 7em;
-    margin-top: 25px;
+    margin-top: 20px;
   }
 }
 
 @media (max-width: 600px) {
   .typingEffect>p{
-    font-size: 4.5em;
-    margin-top: 25px;
+    font-size: 4.6em;
   }
 }
 </style>
