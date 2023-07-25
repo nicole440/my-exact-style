@@ -11,12 +11,13 @@
     </nav>
     <RouterView />
     <footer>
-      <h6>© 2023 Nicole Groff. All Rights Reserved.</h6>
+      <h6>© 2023 Nicole L. Groff. All Rights Reserved.</h6>
     </footer>
   </div>
 </template>
 
 <style>
+
 #app {
   box-sizing: border-box;
   font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -109,9 +110,10 @@ a:hover {
 }
 
 footer {
-    bottom: 0;
-    text-align: center;
-    box-shadow: 0 5px 2px 7px rgba(0, 0, 0, 0.123);
+  letter-spacing: 2px;
+  bottom: 0;
+  text-align: center;
+  box-shadow: 0 5px 2px 7px rgba(0, 0, 0, 0.123);
 }
 
 footer>h6 {

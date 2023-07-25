@@ -44,6 +44,7 @@
     padding: 10px;
     background-color: #eceaeac7;
     text-align: center;
+    border-radius: 20px;
 }
 
 h1 {
@@ -64,14 +65,5 @@ h1 {
 .description {
     grid-area: info;
     font-size: 1.2rem;
-}
-
-.subtext {
-    font-size: 1rem;
-    padding: 10px;
-}
-
-.subtext>span {
-    font-weight: 400;
 }
 </style>

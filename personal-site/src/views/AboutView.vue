@@ -37,16 +37,21 @@ export default {
           intricacies of data storage and retrieval.</p>
       </div>
       <div>
-        <p class="detail">Outside of programming, I find solace in birdwatching, showering my rescue animals with love,
-          and continually honing my skills and
-          discipline in Brazilian jiu-jitsu.</p>
+        <p class="detail">
+          Self-motivated and naturally curious, I am constantly
+          pursuing new challenges to enhance my skills and understanding of technical concepts.
+        </p>
       </div>
       <div>
-        <p>I'm currently seeking opportunities in backend development or data engineering.</p>
+        <h2>
+          I'm both detail-oriented and context-driven, always seeking to understand how the finer details make up the big
+          picture.
+        </h2>
       </div>
       <div>
         <p class="detail">
-          I'm eager to contribute my unique perspective, passion for programming, and enthusiasm for problem-solving as
+          I'm open to new opportunities, and eager to contribute my unique perspective, passion for programming, and
+          enthusiasm for problem-solving as
           part of a cohesive team.
         </p>
       </div>
