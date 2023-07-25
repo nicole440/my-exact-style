@@ -52,8 +52,8 @@ h2 {
     margin-bottom: 0;
 }
 
-.github-link {
-    max-height: 50px;
+.repo-link {
+    max-height: 30px;
     align-content: baseline;
 }
 </style>

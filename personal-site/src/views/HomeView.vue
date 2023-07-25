@@ -18,9 +18,10 @@ export default {
       <div class="section">
         <h1>Hi, I'm Nicole. I'm a software developer.</h1>
         <p>I'm also a bird-watcher, cat-whisperer, and a blue belt in Brazilian jiu-jitsu.</p>
-        <div class="photo-container">
+        <br>
+        <!-- <div class="photo-container">
           <img class="photo" src="src/assets/IMG_5690~5.JPG" alt="Photo of Nicole Groff">
-        </div>
+        </div> -->
         <p>I have a passion for working with data using Java and Python. Building algorithms and
           crafting efficient data processing systems brings me joy, as I strive for elegant solutions that drive
           insightful outcomes.</p>

@@ -10,8 +10,12 @@
     </nav>
     <RouterView />
     <footer>
-      <a href="https://linkedin.com/in/ngroff" target="_blank"><img class="linkedin" src="src/assets/linkedin.jpg"
-          alt="LinkedIn logo"></a>
+      <div class="contact-logos">
+        <a href="https://linkedin.com/in/ngroff" target="_blank"><img class="linkedin-logo" src="src/assets/linkedin.png"
+            alt="LinkedIn logo"></a>
+        <a href="https://github.com/nicole440" target="_blank"><img class="github-logo"
+            src="src/assets/GitHub-PNG-Isolated-Photo.png" alt="GitHub logo"></a>
+      </div>
       <h6>© 2023 Nicole L. Groff. All Rights Reserved.</h6>
     </footer>
   </div>
@@ -77,13 +81,19 @@ a:hover {
   color: #000;
 }
 
-.logo {
-  max-width: 50px;
+.contact-logos {
+  display: inline-block;
 }
 
-.linkedin {
-  max-height: 20px;
-  margin-top: 3px;
+.linkedin-logo {
+  max-height: 30px;
+  margin: 0 auto;
+}
+
+.github-logo {
+  max-width: 43px;
+  max-height: 25px;
+  margin: 3px auto;
 }
 
 @media (max-width: 1024px) {
@@ -118,6 +128,7 @@ footer {
 }
 
 footer>h6 {
-  margin: 8px auto;
+  margin-bottom: 8px;
+  margin-top: 0;
 }
 </style>

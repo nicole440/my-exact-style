@@ -19,10 +19,8 @@ export default {
         <h2>I like to build things.</h2>
 
         <p>I first began coding as a kid when I bought a book on HTML and CSS for building websites. I spent hours not
-          only
-          creating static webpages for fun, but also using those skills, in true Millennial fashion, to personalize
-          my
-          MySpace.</p>
+          only creating static webpages for fun, but also using those skills, in true Millennial fashion, to personalize
+          my MySpace.</p>
 
         <p>Before pursuing software development, I worked as a paralegal, navigating the worlds of
           business, commercial real estate, and liquor law. One of the most rewarding parts of my role was working
@@ -42,12 +40,10 @@ export default {
           picture.
         </p>
 
-
-        <h2>
+        <p>
           I'm open to new opportunities, and eager to contribute my unique perspective, passion for programming, and
-          enthusiasm for problem-solving as
-          part of a cohesive team.
-        </h2>
+          enthusiasm for problem-solving as part of a cohesive team.
+        </p>
       </div>
     </div>
   </div>
