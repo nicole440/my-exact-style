@@ -18,7 +18,7 @@
     border: 1px solid lightgrey;
     border-radius: 20px;
     padding: 30px;
-    background-color: #ffffffb2;
+    background-color: #ffffffcb;
 }
 
 @media (max-width: 600px) {
@@ -33,9 +33,9 @@
     margin-bottom: 10px;
 }
 
-.project-description,
-.project-header {
-    background-color: #ffffffb2;
+.description {
+    grid-area: info;
+    font-size: 1.2rem;
 }
 
 .project-screenshot {
@@ -47,23 +47,13 @@
     border-radius: 20px;
 }
 
-h1 {
+h2 {
     grid-area: info;
-    font-size: 1.7rem;
-    margin: 0;
+    margin-bottom: 0;
 }
 
 .github-link {
     max-height: 50px;
     align-content: baseline;
-}
-
-.github-logo {
-    max-width: 50px;
-}
-
-.description {
-    grid-area: info;
-    font-size: 1.2rem;
 }
 </style>
