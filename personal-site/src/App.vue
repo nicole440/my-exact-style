@@ -11,10 +11,10 @@
     <RouterView />
     <footer>
       <div class="contact-logos">
-        <a href="https://linkedin.com/in/ngroff" target="_blank"><img class="linkedin-logo" src="src/assets/linkedin.png"
+        <a href="https://linkedin.com/in/ngroff" target="_blank"><img class="linkedin-logo" src="/linkedin.png"
             alt="LinkedIn logo"></a>
         <a href="https://github.com/nicole440" target="_blank"><img class="github-logo"
-            src="src/assets/GitHub-PNG-Isolated-Photo.png" alt="GitHub logo"></a>
+            src="/GitHub-PNG-Isolated-Photo.png" alt="GitHub logo"></a>
       </div>
       <h6>© 2023 Nicole L. Groff. All Rights Reserved.</h6>
     </footer>

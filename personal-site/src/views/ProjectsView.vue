@@ -20,7 +20,7 @@ export default {
                     <div class="project-header">
                         <h2>Recording Fee Calculator</h2>
                         <a class="github-link" href="https://github.com/nicole440/bird-observer" target="_blank"><img
-                                class="repo-link" src="../assets/GitHub-PNG-Isolated-Photo.png" alt="GitHub logo"></a>
+                                class="repo-link" src="/GitHub-PNG-Isolated-Photo.png" alt="GitHub logo"></a>
                     </div>
                     <div class="project-description">
                         <p class="description">A simple and user-friendly tool to accurately calculate complex recording
@@ -39,7 +39,7 @@ export default {
                     <div class="project-header">
                         <h2>Crime Data Analysis</h2>
                         <a class="github-link" href="https://github.com/nicole440/crime-data-analysis" target="_blank"><img
-                                class="repo-link" src="../assets/GitHub-PNG-Isolated-Photo.png" alt="GitHub logo"></a>
+                                class="repo-link" src="/GitHub-PNG-Isolated-Photo.png" alt="GitHub logo"></a>
                     </div>
                     <div class="project-description">
                         <p class="description">A Python program written using Jupyter Notebook and the Pandas
@@ -57,7 +57,7 @@ export default {
                     <div class="project-header">
                         <h2>eBird Data Pipeline</h2>
                         <a class="github-link" href="https://github.com/nicole440/dryocopus-pileatus" target="_blank"><img
-                                class="repo-link" src="../assets/GitHub-PNG-Isolated-Photo.png" alt="GitHub logo"></a>
+                                class="repo-link" src="/GitHub-PNG-Isolated-Photo.png" alt="GitHub logo"></a>
                     </div>
                     <div class="project-description">
                         <p class="description">A Python program written in a Jupyter Notebook that extracts recent
@@ -76,8 +76,9 @@ export default {
                 <div class="project-info">
                     <div class="project-header">
                         <h2>HopSeeker</h2>
-                        <a class="github-link" href="https://github.com/nicole440/hop-seeker" target="_blank"><img
-                                class="repo-link" src="../assets/GitHub-PNG-Isolated-Photo.png" alt="GitHub logo"></a>
+                        <a class="github-link" href="https://github.com/nicole440/hop-seeker" target="_blank">
+                            <img class="repo-link" src="/GitHub-PNG-Isolated-Photo.png" alt="GitHub logo">
+                        </a>
                     </div>
                     <div class="project-description">
                         <p class="description">A full-stack application (in progress) that consumes the OpenBrewery
