@@ -7,17 +7,17 @@
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/about">About</RouterLink>
       <RouterLink to="/projects">Projects</RouterLink>
-      <RouterLink to="/contact">Contact</RouterLink>
     </nav>
     <RouterView />
     <footer>
+      <a href="https://linkedin.com/in/ngroff" target="_blank"><img class="linkedin" src="src/assets/linkedin.jpg"
+          alt="LinkedIn logo"></a>
       <h6>© 2023 Nicole L. Groff. All Rights Reserved.</h6>
     </footer>
   </div>
 </template>
 
 <style>
-
 #app {
   box-sizing: border-box;
   font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -30,7 +30,6 @@
 
 body {
   display: block;
-  /* background-color: #dbd5d7; */
   background-image: url("https://images.unsplash.com/uploads/141155339325423394b24/03982423?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
   background-size: contain;
   background-position: right;
@@ -40,7 +39,8 @@ body {
   padding-bottom: 50px;
 }
 
-nav, footer {
+nav,
+footer {
   margin: 0 auto;
   position: fixed;
   width: 100vw;
@@ -77,19 +77,20 @@ a:hover {
   color: #000;
 }
 
+.logo {
+  max-width: 50px;
+}
+
+.linkedin {
+  max-height: 20px;
+  margin-top: 3px;
+}
+
 @media (max-width: 1024px) {
 
   body {
     background-attachment: fixed;
     background-position: center bottom;
-  }
-
-  h1 {
-    font-size: 26px;
-  }
-
-  p {
-    font-size: 24px;
   }
 }
 
