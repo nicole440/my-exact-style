@@ -8,7 +8,6 @@
 }
 
 .main-text>div {
-    /* margin-bottom: 25px; */
     max-width: 40%;
     background-color: #ffffffc4;
 }
@@ -28,7 +27,6 @@ h3 {
 
 h1 {
     font-size: 42px;
-    /* font-size: 1.7rem; */
     
 }
 
@@ -45,7 +43,6 @@ p {
     font-weight: 200;
     font-size: 24px;
     margin: 0;
-    /* padding: 10px 0; */
 }
 
 @media (max-width: 1024px) {
@@ -61,14 +58,7 @@ p {
 .detail {
     font-size: 22px;
 }
-/* 
-.subtext {
-    font-size: 24px;
-} */
 
-/* div.main-text {
-  margin: 0 10px;
-} */
 
 @media (max-width: 1024px) {
     .main-text>div {
