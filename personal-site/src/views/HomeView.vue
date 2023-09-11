@@ -17,7 +17,7 @@ export default {
     <div class="main-text">
       <div class="section">
         <h1>Hi, I'm Nicole. I'm a software developer.</h1>
-        <p>I'm also a bird-watcher, cat-whisperer, and a blue belt in Brazilian jiu-jitsu.</p>
+        <p>I'm also a bird-watcher, nature-lover, and a blue belt in Brazilian jiu-jitsu.</p>
         <br>
         <!-- <div class="photo-container">
           <img class="photo" src="src/assets/IMG_5690~5.JPG" alt="Photo of Nicole Groff">
@@ -38,19 +38,16 @@ export default {
         <p class="detail">Spring Boot, Vue.js, HTML, CSS, Responsive design</p>
 
         <h3>Data Analysis & Processing:</h3>
-        <p class="detail">PostgreSQL, NoSQL, Pandas, Spark, Databricks</p>
+        <p class="detail">PostgreSQL, Pandas, Spark, Databricks</p>
 
         <h3>Data Modeling & Visualization:</h3>
         <p class="detail">Entity Relationship Diagrams (ERD), Power BI, Excel</p>
 
         <h3>Software Development Practices & Tools:</h3>
-        <p class="detail">RESTful APIs, Design Patterns, Debugging, Git, Unix, Docker, Agile development</p>
+        <p class="detail">RESTful APIs, Debugging, Git, Unix, Docker, Agile</p>
 
         <h3>Testing & Quality Assurance:</h3>
-        <p class="detail">Test Driven Development (TDD), Unit testing (JUnit), Integration testing</p>
-
-        <h3>Professional Skills: </h3>
-        <p class="detail">Critical thinking, Project management, Prioritization, Cross-functional collaboration</p>
+        <p class="detail">Unit testing (JUnit), Integration testing</p>
 
         <h3>Certifications:</h3>
         <p class="detail">AWS Certified Cloud Practitioner</p>
