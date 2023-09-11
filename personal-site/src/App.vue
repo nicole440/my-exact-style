@@ -30,6 +30,7 @@
   min-height: 100vh;
   margin: 0;
   display: grid;
+  background-color: #9996c9;
 }
 
 body {
@@ -47,7 +48,7 @@ nav,
 footer {
   margin: 0 auto;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   text-align: center;
   background-color: #fff;
 }
