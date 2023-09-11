@@ -76,7 +76,8 @@ export default {
                         <a class="github-link" href="https://github.com/nicole440/hop-seeker" target="_blank">Code</a>
                     </div>
                     <div class="project-description">
-                        <p class="description">A full-stack application (in progress) that consumes the OpenBrewery
+                        <p class="description">A full-stack application (in progress) being built with Java, Spring Boot,
+                            PostgreSQL, JavaScript, HTML and CSS and which consumes the OpenBrewery
                             public API to allow users to search for Pennsylvania breweries by name, city, or zip code.
                             Registered users will be able to add feature tags (such as dog-friendly or outdoor seating)
                             and build and maintain a list of their favorite breweries.</p>
