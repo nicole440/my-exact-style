@@ -4,12 +4,13 @@
 
 <style>
 .main-text {
-    margin: auto 10px;
+    margin: 0 auto;
 }
 
 .main-text>div {
     max-width: 40%;
     background-color: #ffffffc4;
+    margin: 0 10px;
 }
 
 div.section {
@@ -68,10 +69,9 @@ p {
 }
 
 @media (max-width: 600px) {
-
     .main-text>div {
         text-align: center;
-        margin-bottom: 50px;
+        margin: 0 auto 50px auto;
     }
 }
 </style>

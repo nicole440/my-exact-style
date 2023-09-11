@@ -46,7 +46,7 @@ typeValue.value = ''; // Reset typing effect
   display: block;
   padding: 20px 0 0 0;
   align-items: left;
-  margin-left: 10px;
+
   white-space: nowrap;
 }
 .typingEffect>p {
@@ -57,12 +57,16 @@ typeValue.value = ''; // Reset typing effect
   .typingEffect>p{
     font-size: 7em;
     margin-top: 20px;
+    text-align: center;
   }
 }
 
 @media (max-width: 600px) {
+  .typingEffect{
+    max-width: 100%;
+  }
   .typingEffect>p{
-    font-size: 4.6em;
+    font-size: 4.4em;
   }
 }
 </style>

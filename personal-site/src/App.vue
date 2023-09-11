@@ -30,7 +30,6 @@
   min-height: 100vh;
   margin: 0;
   display: grid;
-  background-color: #9996c9;
 }
 
 body {

@@ -17,7 +17,7 @@ export default {
     <div class="main-text">
       <div class="section">
         <h1>Hi, I'm Nicole. I'm a software developer.</h1>
-        <p>I'm also a bird-watcher, nature-lover, and a blue belt in Brazilian jiu-jitsu.</p>
+        <p>I'm also a bird-watcher, nature lover, and a blue belt in Brazilian jiu-jitsu.</p>
         <br>
         <!-- <div class="photo-container">
           <img class="photo" src="src/assets/IMG_5690~5.JPG" alt="Photo of Nicole Groff">
@@ -31,6 +31,8 @@ export default {
           intricacies of data storage and retrieval.</p>
       </div>
       <div class="section">
+        <h2>Below are some of the tools and technologies I've been working with:</h2>
+        <br>
         <h3>Programming Languages:</h3>
         <p class="detail">Java, Python, JavaScript</p>
 
@@ -44,13 +46,13 @@ export default {
         <p class="detail">Entity Relationship Diagrams (ERD), Power BI, Excel</p>
 
         <h3>Software Development Practices & Tools:</h3>
-        <p class="detail">RESTful APIs, Debugging, Git, Unix, Docker, Agile</p>
+        <p class="detail">RESTful APIs, MVC Design Pattern, Debugging, Git, Unix, Agile, Docker</p>
 
         <h3>Testing & Quality Assurance:</h3>
         <p class="detail">Unit testing (JUnit), Integration testing</p>
 
-        <h3>Certifications:</h3>
-        <p class="detail">AWS Certified Cloud Practitioner</p>
+        <h3>Cloud Computing:</h3>
+        <p class="detail">AWS: EC2, S3, Route 53, CloudFront</p>
       </div>
     </div>
   </div>
