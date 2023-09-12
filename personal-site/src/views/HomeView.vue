@@ -46,7 +46,7 @@ export default {
         <p class="detail">Entity Relationship Diagrams (ERD), Power BI, Excel</p>
 
         <h3>Software Development Practices & Tools:</h3>
-        <p class="detail">RESTful APIs, MVC Design Pattern, Debugging, Git, Unix, Agile, Docker</p>
+        <p class="detail">RESTful APIs, MVC design pattern, Debugging, Git, Unix, Agile, Docker</p>
 
         <h3>Testing & Quality Assurance:</h3>
         <p class="detail">Unit testing (JUnit), Integration testing</p>

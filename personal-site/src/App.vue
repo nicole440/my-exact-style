@@ -3,11 +3,11 @@
 
 <template>
   <div>
-    <nav>
+    <!-- <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/about">About</RouterLink>
       <RouterLink to="/projects">Projects</RouterLink>
-    </nav>
+    </nav> -->
     <RouterView />
     <footer>
       <div class="contact-logos">
@@ -34,8 +34,7 @@
 
 body {
   display: block;
-  background-image: url("https://images.unsplash.com/uploads/141155339325423394b24/03982423?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
-  background-size: contain;
+  background-image: url("https://images.unsplash.com/uploads/141155339325423394b24/03982423?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");  background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -109,7 +108,7 @@ a:hover {
     width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 
   }
 

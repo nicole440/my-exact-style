@@ -4,12 +4,12 @@
 
 <style>
 
-.projects-container {
+div.projects-container {
     display: grid;
     margin: 10px;
 }
 
-.project {
+div.project {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -22,7 +22,7 @@
 }
 
 @media (max-width: 600px) {
-    .project {
+    div.project {
         display: flex;
         flex-wrap: wrap;
         text-align: center;

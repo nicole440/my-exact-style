@@ -64,6 +64,7 @@ typeValue.value = ''; // Reset typing effect
 @media (max-width: 600px) {
   .typingEffect{
     max-width: 100%;
+    padding: 25px 0 0 0;
   }
   .typingEffect>p{
     font-size: 4.4em;
