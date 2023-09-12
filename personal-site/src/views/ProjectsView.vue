@@ -72,6 +72,22 @@ export default {
             <div class="project">
                 <div class="project-info">
                     <div class="project-header">
+                        <h2>Portfolio Site</h2>
+                        <a class="github-link" href="https://github.com/nicole440/my-exact-style" target="_blank">Code</a>
+                    </div>
+                    <div class="project-description">
+                        <p class="description">I build this website with HTML, CSS, JavaScript, and the Vue.js framework. It
+                            is hosted in an AWS S3 bucket, utilizing a custom domain registered with Route 53 which points
+                            to an Amazon CloudFront distribution for secure content delivery.</p>
+                    </div>
+                </div>
+                <div class="project-screenshot">
+                    <p>You're looking at it!</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-info">
+                    <div class="project-header">
                         <h2>HopSeeker</h2>
                         <a class="github-link" href="https://github.com/nicole440/hop-seeker" target="_blank">Code</a>
                     </div>
