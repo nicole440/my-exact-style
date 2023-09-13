@@ -18,7 +18,7 @@ div.project {
     border: 1px solid lightgrey;
     border-radius: 20px;
     padding: 30px;
-    background-color: #ffffffcb;
+    background-color: #ffffffe0;
 }
 
 @media (max-width: 600px) {
@@ -50,10 +50,5 @@ div.project {
 h2 {
     grid-area: info;
     margin-bottom: 0;
-}
-
-.repo-link {
-    max-height: 30px;
-    align-content: baseline;
 }
 </style>

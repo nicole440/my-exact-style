@@ -4,19 +4,38 @@
 
 <style>
 .main-text {
-    margin: 0 auto;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "intro photo-container"
+        ". about"
+        "tech .";
 }
 
 .main-text>div {
-    max-width: 40%;
-    background-color: #ffffffc4;
+    /* max-width: 40%; */
+    background-color: #ffffffd0;
     margin: 0 10px;
+    padding: 10px;
 }
 
-div.section {
-  border-radius: 20px;
-  border: none;
-  margin-bottom: 20px;
+div#section {
+    border-radius: 20px;
+    border: none;
+    padding: 50px;
+}
+
+div#section.intro {
+    grid-area: intro;
+}
+
+div#section.about {
+    grid-area: about;
+}
+
+div#section.tech {
+    grid-area: tech;
 }
 
 h1,
@@ -28,7 +47,7 @@ h3 {
 
 h1 {
     font-size: 42px;
-    
+
 }
 
 h2 {
@@ -60,11 +79,14 @@ p {
     font-size: 22px;
 }
 
-
-@media (max-width: 1024px) {
-    .main-text>div {
-        max-width: 500px;
-        background-color: #ffffffd0;
+@media (max-width: 992px) {
+    .main-text {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "intro"
+        "photo-container"
+        "about"
+        "tech";
     }
 }
 

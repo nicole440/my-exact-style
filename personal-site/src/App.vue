@@ -3,10 +3,15 @@
 
 <template>
   <div>
-    <!-- <nav>
+    <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/about">About</RouterLink>
       <RouterLink to="/projects">Projects</RouterLink>
+    </nav>
+    <!-- <nav>
+      <a href="#app">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
     </nav> -->
     <RouterView />
     <footer>
@@ -22,6 +27,10 @@
 </template>
 
 <style>
+html {
+  scroll-behavior:smooth;
+}
+
 #app {
   box-sizing: border-box;
   font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -34,8 +43,9 @@
 
 body {
   display: block;
-  background-image: url("https://images.unsplash.com/uploads/141155339325423394b24/03982423?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");  background-size: contain;
-  background-position: right;
+  background-size: cover;
+  background-position: bottom;
+  background-image: url("https://images.unsplash.com/photo-1693920182708-63c55d252260?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0 auto;
@@ -48,14 +58,14 @@ footer {
   position: fixed;
   width: 100%;
   text-align: center;
-  background-color: #fff;
 }
 
 nav {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.123);
+  /* box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.123); */
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, .5));
 }
 
 nav>a {
@@ -67,7 +77,8 @@ nav>a {
 }
 
 nav>a:hover {
-  background-color: #eceaea;
+  background-color: #eceaeaa2;
+  background: linear-gradient(rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.4), rgba(200, 200, 200, 0.3), rgba(200, 200, 200, .2));
   color: rgb(192, 112, 7);
 }
 
@@ -78,6 +89,18 @@ a {
 
 a:hover {
   color: #000;
+}
+
+footer {
+  letter-spacing: 2px;
+  bottom: 0;
+  text-align: center;
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, .9));
+}
+
+footer>h6 {
+  margin-bottom: 8px;
+  margin-top: 0;
 }
 
 .contact-logos {
@@ -95,21 +118,22 @@ a:hover {
   margin: 3px auto;
 }
 
-@media (max-width: 1024px) {
-
+/* @media (max-width: 1024px) {
   body {
     background-attachment: fixed;
     background-position: center bottom;
   }
-}
+} */
 
-@media (max-width: 800px) {
+@media (max-width: 992px) {
+  nav, footer {
+    background-color: rgba(255, 255, 255, 0.65);
+  }
   nav {
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
-
   }
 
   nav>a {
@@ -117,17 +141,5 @@ a:hover {
     font-size: 1.5em;
     letter-spacing: -3px;
   }
-}
-
-footer {
-  letter-spacing: 2px;
-  bottom: 0;
-  text-align: center;
-  box-shadow: 0 5px 2px 7px rgba(0, 0, 0, 0.123);
-}
-
-footer>h6 {
-  margin-bottom: 8px;
-  margin-top: 0;
 }
 </style>

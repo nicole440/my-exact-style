@@ -8,7 +8,7 @@ const typeValue = ref('');
 const typeEffect = () => {
   if (typeValue.value.length < header.length) {
     typeValue.value += header.charAt(typeValue.value.length);
-    setTimeout(typeEffect, 75);
+    setTimeout(typeEffect, 100);
   } 
 }
 typeEffect()
@@ -32,41 +32,46 @@ typeValue.value = ''; // Reset typing effect
 </script>
 
 <template>
-    <div class="typingEffect">
+    <div id="typing-effect">
       <p>{{ typeValue }}</p>
     </div>
 </template>
 
 <style scoped>
 
-.typingEffect {
-  background-color: transparent;
+#typing-effect {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
   font-family: 'Times New Roman', Times, serif;
   color: #000;
   display: block;
-  padding: 20px 0 0 0;
-  align-items: left;
-
+  padding: 120px 0;
+  text-align: center;
+  margin-bottom: 10px;
   white-space: nowrap;
 }
-.typingEffect>p {
-  font-size: 10em;
+@media (min-width: 1400px) {
+  #typing-effect {
+    min-height: 100vh;
+  }
 }
 
+#typing-effect>p {
+  font-size: 10em;
+}
 @media (max-width: 800px) {
-  .typingEffect>p{
+  #typing-effect>p{
     font-size: 7em;
-    margin-top: 20px;
     text-align: center;
   }
 }
 
 @media (max-width: 600px) {
-  .typingEffect{
+  #typing-effect{
     max-width: 100%;
-    padding: 25px 0 0 0;
+    padding: 15px 0;
+    margin-top: 40px;
   }
-  .typingEffect>p{
+  #typing-effect>p{
     font-size: 4.4em;
   }
 }

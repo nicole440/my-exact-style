@@ -15,13 +15,13 @@ export default {
     <HelloWorld />
     <TextContent />
     <div class="main-text">
-      <div class="section">
+      <div id="section">
         <h2>I like to build things.</h2>
 
         <p>I first began coding as a kid when I bought a book on building websites with HTML and CSS. I spent hours not
-          only creating static webpages for fun, but also using those skills to personalize my MySpace.</p>
+          only creating static webpages for fun, but also using those skills, in true Millenial fashion, to personalize my MySpace.</p>
 
-        <p>Before pursuing software development, I worked as a paralegal, navigating the fast-paced and complex worlds of
+        <p>In a more recent iteration, I worked as a paralegal, navigating the fast-paced and complex worlds of
           business, commercial real estate, and liquor law. One of the most rewarding parts of my role was being able to help
           small business owners make their dreams a reality.</p>
 
