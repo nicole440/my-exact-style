@@ -2,39 +2,40 @@
 
 <template></template>
 
-<style>
-.main-text {
-    margin: 50px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "intro photo-container"
-        ". about"
-        "tech .";
-}
+<!-- <style>
 
-.main-text>div {
-    /* max-width: 40%; */
+
+.content>div {
     background-color: #ffffffd0;
     margin: 0 10px;
     padding: 10px;
 }
 
-div#section {
-    border-radius: 20px;
-    border: none;
-    padding: 50px;
+section {
+  margin: 0 15px 30px 15px;
+  border-radius: 20px;
+  padding: 30px;
+  background-color: #ffffffde;
 }
 
-div#section.intro {
+p.detail {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#intro {
     grid-area: intro;
 }
 
-div#section.about {
+.photo-container {
+    grid-area: photo-container;
+}
+
+#about {
     grid-area: about;
 }
 
-div#section.tech {
+#resume {
     grid-area: tech;
 }
 
@@ -96,4 +97,4 @@ p {
         margin: 0 auto 50px auto;
     }
 }
-</style>
+</style> -->

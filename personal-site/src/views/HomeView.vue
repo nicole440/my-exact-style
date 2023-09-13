@@ -1,11 +1,17 @@
 <script>
 import HelloWorld from '../components/HelloWorld.vue';
-import TextContent from '../components/TextContent.vue';
+import Intro from '../components/Intro.vue';
+import About from '../components/About.vue';
+import ProjectsGrid from '../components/ProjectsGrid.vue';
+import Resume from '../components/Resume.vue';
 
 export default {
   components: {
     HelloWorld,
-    TextContent
+    Intro,
+    About,
+    ProjectsGrid,
+    Resume
   },
 };
 </script>
@@ -13,87 +19,81 @@ export default {
 <template>
   <div>
     <HelloWorld />
-    <TextContent />
-    <div class="main-text">
-      <div id="section" class="intro">
-        <h1>Hi, I'm Nicole. I'm a software developer.</h1>
-        <p>I'm also a bird-watcher, nature lover, and a blue belt in Brazilian jiu-jitsu.</p>
-        <br>
-        <p>I have a passion for working with data using Java and Python. Building algorithms and
-          crafting efficient data processing systems brings me joy, as I strive for elegant solutions that drive
-          insightful outcomes.</p>
-        <br>
-        <p>I also love working with databases, from designing solid database
-          architectures to optimizing queries and ensuring seamless application integration. I enjoy diving deep into the
-          intricacies of data storage and retrieval.</p>
-      </div>
-
-      <div id="section" class="photo-container">
-          <img class="photo" src="public/IMG_5690~5.JPG" alt="Photo of Nicole Groff">
-        </div>
-
-      <div id="section" class="tech">
-        <h3>Languages:</h3>
-        <p class="detail">Java, Python, JavaScript, SQL, HTML, CSS</p>
-
-        <h3>Frameworks & Libraries: </h3>
-        <p class="detail">Spring Boot, Vue.js, Pandas</p>
-
-        <h3>Databases:</h3>
-        <p class="detail">PostgreSQL</p>
-
-        <h3>Data Modeling & Visualization:</h3>
-        <p class="detail">Entity Relationship Diagrams (ERD), Power BI, Excel</p>
-
-        <h3>Architecture & Design:</h3>
-        <p class="detail">RESTful APIs, MVC design pattern</p>
-
-        <h3>Tools:</h3>
-        <p class="detail">Git, Unix, IntelliJ, Visual Studio Code, Jupyter, Postman, Docker</p>
-
-        <h3>Testing & Quality Assurance:</h3>
-        <p class="detail">Debugging, Unit testing (JUnit), Integration testing</p>
-
-        <h3>Cloud Computing:</h3>
-        <p class="detail">AWS: EC2, S3, Route 53, CloudFront</p>
-      </div>
-
-      
-
-    </div>
+    <Intro />
+    <About />
+    <ProjectsGrid />
+    <Resume />
   </div>
 </template>
 
 <style>
-div#section.photo-container {
-    grid-area: photo-container;
-    background-color: transparent;
-    margin: auto;
-    /* max-height: fit-content; */
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 5px 0;
 }
 
-.photo {
-  border:#ffffffde solid 15px;
-  border-radius: 50%;
-  height: 250px;
-  margin: auto;
+h1 {
+  font-size: 42px;
+
 }
 
-@media only screen and (max-width: 768px) {
-  div#section.photo-container {
-    display: none;
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+h4 {
+  color: rgb(192, 112, 7);
+  font-family: 'La Belle Aurore', 'Lucida Handwriting', 'Brush Script MT', cursive;
+  font-weight: normal;
+  font-size: 6rem;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 20px;
+  line-height: 0;
+}
+
+p {
+  font-weight: 200;
+  font-size: 24px;
+  margin: 0;
+  padding: 5px 0;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 26px;
   }
-}
 
-#section {
-  margin: 10px;
-  border-radius: 20px;
-  padding: 20px;
-  background-color: #ffffffde;
+  p {
+    font-size: 24px;
+  }
 }
 
 p.detail {
   font-size: 1.2rem;
   margin-bottom: 10px;
+}
+
+section {
+  margin: 0 auto;
+  margin-bottom: 150px;
+  border-radius: 20px;
+  padding: 15px 30px;
+  background-color: #ffffffde;
+  max-width: 80vw;
+}
+
+@media (max-width: 800px) {
+  section {
+    max-width: 100vw;
+  }
 }
 </style>

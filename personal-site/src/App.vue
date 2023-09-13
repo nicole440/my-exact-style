@@ -1,18 +1,10 @@
-<script setup>
-</script>
-
 <template>
   <div>
     <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
-      <RouterLink to="/projects">Projects</RouterLink>
-    </nav>
-    <!-- <nav>
-      <a href="#app">Home</a>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
-    </nav> -->
+      <a href="#resume">Resume</a>
+    </nav>
     <RouterView />
     <footer>
       <div class="contact-logos">
@@ -27,6 +19,7 @@
 </template>
 
 <style>
+
 html {
   scroll-behavior:smooth;
 }
@@ -39,6 +32,29 @@ html {
   min-height: 100vh;
   margin: 0;
   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "intro"
+    "about"
+    "projects"
+    "resume"
+}
+
+
+#intro {
+    grid-area: intro;
+}
+
+#about {
+    grid-area: about;
+}
+
+#projects {
+  grid-area: projects;
+}
+
+#resume {
+    grid-area: resume;
 }
 
 body {
@@ -52,11 +68,13 @@ body {
   padding-bottom: 50px;
 }
 
+/* NAV BAR & FOOTER */
+
 nav,
 footer {
   margin: 0 auto;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   text-align: center;
 }
 
@@ -64,8 +82,8 @@ nav {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  /* box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.123); */
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, .5));
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.123);
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, .5), rgba(255, 255, 255, .3));
 }
 
 nav>a {
@@ -82,6 +100,23 @@ nav>a:hover {
   color: rgb(192, 112, 7);
 }
 
+@media (max-width: 992px) {
+  nav, footer {
+    background-color: rgba(255, 255, 255, 0.65);
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  nav>a {
+    width: auto;
+    font-size: 1.5em;
+    letter-spacing: -3px;
+  }
+}
+
 a {
   text-decoration: none;
   color: rgb(192, 112, 7);
@@ -90,6 +125,8 @@ a {
 a:hover {
   color: #000;
 }
+
+/* FOOTER */
 
 footer {
   letter-spacing: 2px;
@@ -118,28 +155,4 @@ footer>h6 {
   margin: 3px auto;
 }
 
-/* @media (max-width: 1024px) {
-  body {
-    background-attachment: fixed;
-    background-position: center bottom;
-  }
-} */
-
-@media (max-width: 992px) {
-  nav, footer {
-    background-color: rgba(255, 255, 255, 0.65);
-  }
-  nav {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  nav>a {
-    width: auto;
-    font-size: 1.5em;
-    letter-spacing: -3px;
-  }
-}
 </style>
