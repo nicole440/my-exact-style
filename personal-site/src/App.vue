@@ -1,6 +1,7 @@
 <template>
   <div>
     <nav>
+      <a href="#hello">Home</a>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#resume">Resume</a>

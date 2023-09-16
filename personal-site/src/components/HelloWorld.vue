@@ -1,17 +1,17 @@
 <script setup>
-import { ref } from 'vue';
-// import { useRoute } from 'vue-router';
+// import { ref } from 'vue';
+// // import { useRoute } from 'vue-router';
 
-let header = "hello, world.";
-const typeValue = ref('');
+// let header = "hello, world.";
+// const typeValue = ref('');
 
-const typeEffect = () => {
-  if (typeValue.value.length < header.length) {
-    typeValue.value += header.charAt(typeValue.value.length);
-    setTimeout(typeEffect, 90);
-  }
-}
-typeEffect()
+// const typeEffect = () => {
+//   if (typeValue.value.length < header.length) {
+//     typeValue.value += header.charAt(typeValue.value.length);
+//     setTimeout(typeEffect, 90);
+//   }
+// }
+// typeEffect()
 
 // Change typewriter text depending on the current route
 // const route = useRoute();
@@ -26,14 +26,15 @@ typeEffect()
 // } else {
 //   header = "hello, world."
 // }
-typeValue.value = ''; // Reset typing effect
-typeEffect(); // Start typing effect again with the new value
+// typeValue.value = ''; // Reset typing effect
+// typeEffect(); // Start typing effect again with the new value
 
 </script>
 
 <template>
-  <header>
-    <h1>{{ typeValue }}</h1>
+  <header id="hello">
+    <!-- <h1>{{ typeValue }}</h1> -->
+    <h1>hello, world.</h1>
   </header>
 </template>
 
